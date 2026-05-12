@@ -1,0 +1,29 @@
+{
+  "best_model": "Lasso Regression",
+  "r2_score": 0.997039737305214,
+  "mae": 112.3250788511775,
+  "rmse": 166.70280411349157,
+  "cv_r2_mean": 0.9967861378059046,
+  "cv_r2_std": 0.0004961077482667925,
+  "features_used": [
+    "typeMaintenance_encoded",
+    "priorite_encoded",
+    "type_encoded",
+    "marque_encoded",
+    "etat_encoded",
+    "heuresFonctionnement",
+    "equipment_age_days",
+    "equipment_age_years",
+    "nombre_pannes_historique",
+    "cout_maintenance_moyen_historique",
+    "dureeEstimee",
+    "coutEstime",
+    "is_critical_priority",
+    "is_corrective",
+    "is_preventive",
+    "has_garantie",
+    "hours_per_day"
+  ],
+  "training_samples": 404,
+  "test_samples": 102
+}
