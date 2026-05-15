@@ -29,6 +29,13 @@ ENV/
 env/
 .venv
 
+# Environment variables (contains sensitive data)
+.env
+.env.local
+.env.*.local
+.env.prod
+.env.test
+
 # IDE
 .vscode/
 .idea/
@@ -39,7 +46,7 @@ env/
 
 # Jupyter Notebook
 .ipynb_checkpoints/
-*.ipynb
+# Optionally uncomment to ignore notebooks: *.ipynb
 
 # Data (keep structure, ignore large files)
 data/raw/*.csv
@@ -48,6 +55,61 @@ data/predictions/*.csv
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !data/predictions/.gitkeep
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Docker
+.docker
+.dockerignore
+docker-compose.override.yml
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Testing
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# OS files
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Security
+*.pem
+*.key
+*.crt
+*.p12
+secrets/
+
+# MongoDB backups
+mongo_dump/
+.mongodb_backup/
+
+# Node modules (if any frontend)
+node_modules/
+npm-debug.log
+yarn-error.log
 
 # Models
 models/*.pkl
