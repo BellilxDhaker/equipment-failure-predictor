@@ -1,10 +1,10 @@
 {
-  "best_model": "Lasso Regression",
-  "r2_score": 0.997039737305214,
-  "mae": 112.3250788511775,
-  "rmse": 166.70280411349157,
-  "cv_r2_mean": 0.9967861378059046,
-  "cv_r2_std": 0.0004961077482667925,
+  "best_model": "Linear Regression",
+  "r2_score": 0.9970108182681144,
+  "mae": 114.14260206634276,
+  "rmse": 167.5150914566404,
+  "cv_r2_mean": 0.9967086345919942,
+  "cv_r2_std": 0.0005659301824327975,
   "features_used": [
     "typeMaintenance_encoded",
     "priorite_encoded",
@@ -23,6 +23,13 @@
     "is_preventive",
     "has_garantie",
     "hours_per_day"
+  ],
+  "categorical_features": [
+    "typeMaintenance",
+    "priorite",
+    "type",
+    "marque",
+    "etat"
   ],
   "training_samples": 404,
   "test_samples": 102
