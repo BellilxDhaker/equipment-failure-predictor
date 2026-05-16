@@ -25,7 +25,7 @@ A production-ready **machine learning solution** for predicting equipment mainte
 ## 📑 Table of Contents
 
 - [Quick Start](#-quick-start)
-- [FastAPI REST API](#-fastapi-rest-api---new) ⭐ NEW
+- [FastAPI REST API](#-fastapi-rest-api---new)
 - [Project Structure](#-project-structure)
 - [Dataset](#-dataset)
 - [Model Performance](#-model-performance)
@@ -33,7 +33,6 @@ A production-ready **machine learning solution** for predicting equipment mainte
 - [Usage](#-usage)
 - [Features](#-features)
 - [Examples](#-examples)
-- [License](#-license)
 
 ---
 
@@ -67,7 +66,7 @@ scaler = joblib.load('models/feature_scaler.pkl')
 
 ---
 
-## 🚀 FastAPI REST API - NEW ⭐
+## 🚀 FastAPI REST API
 
 **Production-ready API with automatic MongoDB integration and non-blocking predictions!**
 
@@ -99,15 +98,15 @@ run_api.bat          # Windows
 
 ### API Endpoints Summary
 
-| Endpoint | Method | Purpose |
-|----------|--------|---------|
-| `/health` | GET | Check API and database status |
-| `/model-info` | GET | Get ML model details |
-| `/predict` | POST | Single record prediction |
-| `/predict-batch` | POST | Batch predictions with auto-save to MongoDB |
-| `/retrieve-pending` | GET | Process all pending records automatically |
-| `/sync-predictions` | POST | Sync entire database |
-| `/predictions/{limit}` | GET | Retrieve recent predictions |
+| Endpoint               | Method | Purpose                                     |
+| ---------------------- | ------ | ------------------------------------------- |
+| `/health`              | GET    | Check API and database status               |
+| `/model-info`          | GET    | Get ML model details                        |
+| `/predict`             | POST   | Single record prediction                    |
+| `/predict-batch`       | POST   | Batch predictions with auto-save to MongoDB |
+| `/retrieve-pending`    | GET    | Process all pending records automatically   |
+| `/sync-predictions`    | POST   | Sync entire database                        |
+| `/predictions/{limit}` | GET    | Retrieve recent predictions                 |
 
 ### Python Client Example
 
@@ -594,47 +593,7 @@ Contributions are welcome! Here's how:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🔗 Links
-
-- **GitHub Repository**: [BellilxDhaker/equipment-failure-predictor](https://github.com/BellilxDhaker/equipment-failure-predictor)
-- **Author**: [Bellil x Dhaker](https://github.com/BellilxDhaker)
-
----
-
-## ❓ FAQ
-
-**Q: How accurate is the model?**  
-A: The model achieves 99.7% R² accuracy on test data with excellent cross-validation scores (0.9968), indicating strong generalization.
-
-**Q: Can I retrain the model with my own data?**  
-A: Yes! Use `src/train_maintenance_cost_model.py` or follow the Jupyter notebook to train with your own dataset.
-
-**Q: What's the difference between the estimates and predictions?**  
-A: Estimates are based on project plans, while predictions use the ML model to forecast actual costs based on historical patterns.
-
-**Q: How many records are needed to train the model?**  
-A: The model was trained on 506 completed maintenance records. More data generally improves accuracy, but 400+ records is a good baseline.
-
-**Q: What Python version is required?**  
-A: Python 3.8 or higher. The project has been tested with Python 3.8-3.11.
-
-**Q: Can I use this for real production environments?**  
-A: Yes! The model is production-ready. Ensure you validate with your own data first and monitor predictions over time.
-
-**Q: How often should I retrain the model?**  
-A: Retrain monthly or quarterly depending on data volume and business changes. Monitor prediction accuracy regularly.
-
----
-
-## 📞 Support
-
-- 📖 Read [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md) for detailed project structure
-- 🐛 Report issues on [GitHub Issues](https://github.com/BellilxDhaker/equipment-failure-predictor/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/BellilxDhaker/equipment-failure-predictor/discussions)
+This project is licensed under the MIT License .
 
 ---
 
@@ -649,7 +608,7 @@ A: Retrain monthly or quarterly depending on data volume and business changes. M
 
 ---
 
-## ✅ Checklist for Getting Started
+## Checklist for Getting Started
 
 - [ ] Clone the repository
 - [ ] Install dependencies (`pip install -r requirements.txt`)
@@ -657,12 +616,3 @@ A: Retrain monthly or quarterly depending on data volume and business changes. M
 - [ ] Run cells sequentially (1-11)
 - [ ] Make predictions on new data
 - [ ] Explore visualizations
-
----
-
-**Happy Predicting! 🎉**
-
----
-
-_Last Updated: May 2026_  
-_Status: Production Ready ✅_

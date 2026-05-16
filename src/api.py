@@ -70,7 +70,7 @@ class MaintenanceRecord(BaseModel):
     dureeEstimee: float
     coutEstime: float
     garantie: bool
-    _id: Optional[str] = Field(None, alias="_id")
+    id: Optional[str] = Field(None, alias="_id")
 
     class Config:
         populate_by_name = True
@@ -78,7 +78,7 @@ class MaintenanceRecord(BaseModel):
 
 class PredictionResponse(BaseModel):
     """Schema for prediction response"""
-    _id: Optional[str]
+    id: Optional[str] = Field(None, alias="_id")
     predicted_cost: float
     estimated_cost: float
     difference: float
