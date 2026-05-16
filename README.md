@@ -9,7 +9,7 @@ A production-ready **machine learning solution** for predicting equipment mainte
 
 ## ⭐ Key Features
 
-- **🎯 High Accuracy**: 99.7% R² Score (Lasso Regression)
+- **🎯 High Accuracy**: 99.7% R² Score
 - **📊 Complete Pipeline**: From raw data to predictions
 - **📈 Interactive Notebook**: Jupyter notebook with full workflow
 - **🔄 Feature Engineering**: 17 advanced features from raw data
@@ -273,13 +273,11 @@ Std Dev:    $3,441.98
 
 ### Model Comparison
 
-| Model                   | R² Score   | MAE         | RMSE        |
-| ----------------------- | ---------- | ----------- | ----------- |
-| **Lasso Regression** ✅ | **0.9970** | **$112.33** | **$166.70** |
-| Ridge Regression        | 0.9970     | $112.97     | $167.14     |
-| Linear Regression       | 0.9970     | $112.23     | $166.96     |
-| Random Forest           | 0.9956     | $118.83     | $203.19     |
-| Gradient Boosting       | 0.9931     | $132.32     | $254.71     |
+| Model             | R² Score | MAE     | RMSE    |
+| ----------------- | -------- | ------- | ------- |
+| Linear Regression | 0.9970   | $112.23 | $166.96 |
+| Random Forest     | 0.9956   | $118.83 | $203.19 |
+| Gradient Boosting | 0.9931   | $132.32 | $254.71 |
 
 ---
 
